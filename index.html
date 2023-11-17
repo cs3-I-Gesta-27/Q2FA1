@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			  #link1:link{
+			   color: darkblue;
+			   background-color: lightblue;
+			   text-decoration: none;
+			   }
+			  #link1:visited{
+			   color:darkgreen;
+			   background-color: pink;
+			   }
+			  #link1:hover{
+			   color:red;
+			   background-color:lightpink;
+			   }
+			  #link1:focus{
+			   color:black;
+			   background-color: darkorange;
+			   }
+			  #link2:link{
+			   color: darkgreen;
+			   background-color: palegreen;
+			   text-decoration: none;
+			   }
+			  #link2:visited{
+			   color:yellow;
+			   background-color: teal;
+			   }
+			  #link2:hover{
+			   color:orange;
+			   background-color:wheat;
+			   }
+			  #link2:focus{
+			   color:white;
+			   background-color: indianred;
+			   }
+			  div{
+			   border: 3px solid black;
+			   width: 150px;
+			   height: 150px;
+			   padding: 10px;
+			   }
+			  div:target#div1{
+			   background-color:darkmagenta;
+			   color:plum;
+			   }
+			  div:target#div2{
+			   border: 10px dotted green;
+			   background-color: palegreen;
+			   color:teal;
+			   }
+		</style>
+	</head>
+		<body>
+			<p><a id="link1" href="#div1">First Link</a>
+			<a id="link2" href="#div2">Second Link</a></p>
+			<br>
+			<div id="div1">Div 1 here</div>
+			<br>
+			<div id="div2">Div 2 here</div>
+		</body>
+</html>
